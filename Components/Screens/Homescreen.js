@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView,TouchableOpacity } from 'react-native';
 import Tiles from '../Tiles';
 
 const Homescreen = () => {
@@ -8,6 +8,10 @@ const Homescreen = () => {
         <ScrollView>
         <View style={styles.container}>
             <View>
+                {/* <Image 
+                source={require('../../assets/bell.png')}
+                style={{width: 20, height: 20}}
+                /> */}
                 <Image
                 source={require('../../assets/user.png')}
                 style={{width: 80, height: 80, alignItems: 'center', marginTop: 40, alignSelf: 'center'}}
@@ -17,14 +21,37 @@ const Homescreen = () => {
             <Text style={styles.name}> Welcome John Doe </Text>
             </View>
             <View style={{flexDirection:'row', flexWrap:'wrap'}}>
+                <TouchableOpacity>
                 <Tiles name='Profile' imageUri={require('../../assets/users.png')}/>
+                </TouchableOpacity>
+
+                <TouchableOpacity>
                 <Tiles name='Fee Statement' imageUri={require('../../assets/money.png')}/>
+                </TouchableOpacity>
+
+                <TouchableOpacity>
                 <Tiles name='Results' imageUri={require('../../assets/analysis.png')}/>
+                </TouchableOpacity>
+
+                <TouchableOpacity>
                 <Tiles name='Notices' imageUri={require('../../assets/board.png')}/>
+                </TouchableOpacity>
+
+                <TouchableOpacity>
                 <Tiles name='Events' imageUri={require('../../assets/event.png')}/>
+                </TouchableOpacity>
+
+                <TouchableOpacity>
                 <Tiles name='Track Record' imageUri={require('../../assets/tracking.png')}/>
+                </TouchableOpacity>
+
+                <TouchableOpacity>
                 <Tiles name='Suggestions' imageUri={require('../../assets/chat.png')}/>
+                </TouchableOpacity>
+
+                <TouchableOpacity>
                 <Tiles name='Home Work' imageUri={require('../../assets/assignment.png')}/>
+                </TouchableOpacity>
             </View>
         </View>
         </ScrollView>
