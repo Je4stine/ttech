@@ -1,11 +1,12 @@
 {
   "expo": {
-    "name": "ttech",
-    "slug": "ttech",
+    "name": "School App",
+    "slug": "school-app",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "description": ""
   },
   "name": "ttech"
 }
